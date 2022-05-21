@@ -1,10 +1,10 @@
 <script>
 </script>
 
-<main class="fp-bg">
-  <div class="site-container">
-    <section class="section-hero">
-      <nav>
+<main>
+  <div>
+    <section class="section-hero fp-bg">
+      <nav class="site-container">
         <ul class="navigation-primary">
           <li class="nav-primary-item">Services</li>
           <li class="nav-primary-item">Gallery</li>
@@ -21,12 +21,25 @@
         <button>Learn more</button>
       </div>
     </section>
+
+    <section class="services-section">
+      <div class="site-container">
+        <div class="content-container">
+          <h1 class="services-section-h1">Services we offer</h1>
+          <p class="services-section-p">The Neat meals company provides its customers with a variety of services ranging from Subscriptions to Vanity kitchens desgined to suit your taste buds</p>
+        </div>
+
+        <div class="animation-container">
+          temp Placeholder for animation
+        </div>
+      </div>
+    </section>
   </div>
 </main>
 
 <style>
   .fp-bg {
-    height: 100vh;
+    width: 100vw;
     background-color: #2D3F6B;
     color: white;
   }
