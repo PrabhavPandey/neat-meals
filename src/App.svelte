@@ -1,23 +1,66 @@
 <script>
 </script>
 
-<main>
-  <section>
-    <h1>YOO</h1>
-  </section>
+<main class="fp-bg">
+  <div class="site-container">
+    <section class="section-hero">
+      <nav>
+        <ul class="navigation-primary">
+          <li class="nav-primary-item">Services</li>
+          <li class="nav-primary-item">Gallery</li>
+          <li class="nav-primary-item">Articles</li>
+        </ul>
+    
+        <ul class="navigation-soc">
+          <li class="nav-soc-item">Linkedin</li>
+          <li class="nav-soc-item">Gmail</li>
+        </ul>
+      </nav>
+      <div class="image-container site-container">
+        <img class="landing-section-image" src="assets/companyLogoHeroSection.jpg" alt="bgimage" />
+        <button>Learn more</button>
+      </div>
+    </section>
+  </div>
 </main>
 
 <style>
-  section {
-    padding: 0;
-    margin: 0;
+  .fp-bg {
     height: 100vh;
     background-color: #2D3F6B;
     color: white;
   }
 
-  h1 {
-    margin: 0;
+  nav {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navigation-primary {
+    display: flex;
+    list-style: none;
+    width: 300px;
+    font-size: 14px;
+    justify-content: space-between;
+  }
+
+  .navigation-soc{
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    font-size: 14px;
+  }
+
+  .landing-section-image {
+    width: 520px;
+  }
+
+  .image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
 </style>
