@@ -3,7 +3,7 @@
 
 <main>
   <section>
-    <h1>YOO </h1>
+    <h1>YOO</h1>
   </section>
 </main>
 
@@ -12,7 +12,7 @@
     padding: 0;
     margin: 0;
     height: 100vh;
-    background-color: rgb(80, 80, 162);
+    background-color: #2D3F6B;
     color: white;
   }
 

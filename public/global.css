@@ -1,3 +1,9 @@
+:root {
+  primary-color: #2d3f6b;
+  secondary-color: #d8eff2;
+  accent-color: #aeebf3;
+}
+
 body {
   margin: 0;
   padding: 0;
