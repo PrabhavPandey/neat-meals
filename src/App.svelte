@@ -53,6 +53,23 @@ import Articlebox from "./components/Articlebox.svelte"
         <Articlebox articleTitle="Hi" article="Bye"/>
       </div>
     </section>
+
+    <footer class="footer-section">
+      <div class="site-container">
+        <button>Contact us</button>
+          <ul class="footer-nav">
+            <li class="footer-nav-item">Home</li>
+            <li class="footer-nav-item">Services</li>
+            <li class="footer-nav-item">Gallery</li>
+            <li class="footer-nav-item">About us</li>
+          </ul>
+
+          <ul class="social-nav-2">
+            <li class="soc-nav-item">Linkedin</li>
+            <li class="soc-nav-item">Gmail</li>
+          </ul>
+      </div>
+    </footer>
   </div>
 </main>
 
