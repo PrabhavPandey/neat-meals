@@ -220,7 +220,7 @@ let articleData = [
   }
 
   .article-section-para {
-    font-size: 16px;
+    font-size: 14px;
     margin-top: 5px;
     width: 500px;
     margin-left: auto;
@@ -229,7 +229,11 @@ let articleData = [
   }
 
   .article-grid {
-    margin-top: 40px;
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 50px;
+    column-gap: 50px;
   }
 
 </style>
