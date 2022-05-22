@@ -42,6 +42,6 @@
         text-decoration: none;
         color: var(--primary);
         font-size: 11px;
-        font-weight: 500;
+        font-weight: 600;
     }
 </style>
