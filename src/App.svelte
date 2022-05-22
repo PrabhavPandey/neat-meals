@@ -160,11 +160,11 @@ let articleData = [
   }
 
   .navigation-soc img {
-    width: 20px;
+    width: 15px;
   }
 
   .nav-soc-item img {
-    width: 26px;
+    width: 20px;
   }
 
   .landing-section-image {
@@ -243,6 +243,7 @@ let articleData = [
 
   footer {
     width: 100vw;
+    margin-top: 50px;
     padding-bottom: 20px;
     background-color: #2D3F6B;
   }

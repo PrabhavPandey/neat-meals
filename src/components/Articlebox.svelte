@@ -2,7 +2,6 @@
     export let articleTitle;
     export let articleDescp;
     export let articleRedir;
-    export let articleImage;
 </script>
 
 <main>
