@@ -1,6 +1,15 @@
 <script>
 import Articlebox from "./components/Articlebox.svelte"
 import Button from "./components/Button.svelte";
+
+let articleData = [
+  {
+    id:1,
+    topic: "This is what exactly Hritikh Roshan eats to stay in shape",
+    subline: "Secrete recipe to the actors Greek God bod",
+    redirect:  `www.youtube.com`
+  }
+]
 </script>
 
 <main>
@@ -162,6 +171,33 @@ import Button from "./components/Button.svelte";
     max-width: 500px;
     line-height: 167.5%;
     margin-top: 5px;
+  }
+
+  .gallery-section h1 {
+    text-align: center;
+    font-weight: 600;
+    color: var(--primary);
+  }
+
+  .article-section-header {
+    font-size: 28px;
+    margin-bottom: 0;
+    color: var(--primary);
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .article-section-para {
+    font-size: 16px;
+    margin-top: 5px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .article-grid {
+    margin-top: 40px;
   }
 
 </style>
