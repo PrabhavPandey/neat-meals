@@ -1,4 +1,5 @@
 <script>
+import Articlebox from "./components/Articlebox.svelte"
 </script>
 
 <main>
@@ -25,6 +26,7 @@
     <section class="services-section">
       <div class="site-container">
         <div class="content-container">
+          <img src="assets/DesginElement1.svg" alt="">
           <h1 class="services-section-h1">Services we offer</h1>
           <p class="services-section-p">The Neat meals company provides its customers with a variety of services ranging from Subscriptions to Vanity kitchens desgined to suit your taste buds</p>
         </div>
@@ -32,6 +34,23 @@
         <div class="animation-container">
           temp Placeholder for animation
         </div>
+      </div>
+    </section>
+
+    <section class="gallery-section site-container">
+      <h1>Gallery</h1>
+      <div>grid Placeholder</div>
+    </section>
+
+    <section class="article-section site-container">
+      <h1 class="article-section-header">Recent Articles</h1>
+      <p class="article-section-para">
+        Lorem ipsum dolor sit amet, consectetur adipiscing
+        elit, sed do eiusmod tempor incididunt ut labore et dolore 
+      </p>
+
+      <div class="article-grid">
+        <Articlebox articleTitle="Hi" article="Bye"/>
       </div>
     </section>
   </div>
