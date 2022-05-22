@@ -24,6 +24,12 @@
         border: 1px solid #D8D8D8;
         box-shadow: 10px 10px 18px rgba(0, 0, 0, 0.25);
         border-radius: 20px;
+        transition: 0.3s ease-in-out;
+    }
+
+    .article-box-container:hover {
+        transform:  translateY(-10px);
+        transition: 0.3s ease-in-out;
     }
 
     .article-title {

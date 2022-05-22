@@ -133,12 +133,13 @@ let articleData = [
     display: flex;
     cursor: pointer;
     list-style: none;
-    width: 290px;
-    font-size: 14px;
+    width: 300px;
+    font-size: 15px;
     justify-content: space-between;
   }
 
   .nav-primary-item {
+    transition: all 0.3s;
     color: var(--secondary);
     filter: opacity(23%);
   }
@@ -146,7 +147,7 @@ let articleData = [
   .nav-primary-item:hover {
     /* color: var(--accent); */
     filter: opacity(100%);
-    transition: ease-in-out 0.3s;
+    transition: all 0.3s;
     font-weight: 500;
   }
 
