@@ -1,5 +1,6 @@
 <script>
 import Articlebox from "./components/Articlebox.svelte"
+import Button from "./components/Button.svelte";
 </script>
 
 <main>
@@ -19,7 +20,7 @@ import Articlebox from "./components/Articlebox.svelte"
       </nav>
       <div class="image-container site-container">
         <img class="landing-section-image" src="assets/companyLogoHeroSection.jpg" alt="bgimage" />
-        <button>Learn more</button>
+        <Button>Learn more</Button>
       </div>
     </section>
 
@@ -56,7 +57,7 @@ import Articlebox from "./components/Articlebox.svelte"
 
     <footer class="footer-section">
       <div class="site-container">
-        <button>Contact us</button>
+        <Button>Contact us</Button>
           <ul class="footer-nav">
             <li class="footer-nav-item">Home</li>
             <li class="footer-nav-item">Services</li>
@@ -91,8 +92,8 @@ import Articlebox from "./components/Articlebox.svelte"
     display: flex;
     cursor: pointer;
     list-style: none;
-    width: 300px;
-    font-size: 15px;
+    width: 290px;
+    font-size: 14px;
     justify-content: space-between;
   }
 
@@ -104,7 +105,7 @@ import Articlebox from "./components/Articlebox.svelte"
   .nav-primary-item:hover {
     /* color: var(--accent); */
     filter: opacity(100%);
-    transition: all 0.3s;
+    transition: ease-in-out 0.3s;
     font-weight: 500;
   }
 
@@ -121,13 +122,15 @@ import Articlebox from "./components/Articlebox.svelte"
   }
 
   .landing-section-image {
-    width: 520px;
+    width: 470px;
   }
 
   .image-container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 30px;
+    padding-bottom: 50px;
   }
 
 </style>
