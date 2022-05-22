@@ -13,8 +13,8 @@ import Articlebox from "./components/Articlebox.svelte"
         </ul>
     
         <ul class="navigation-soc">
-          <li class="nav-soc-item">Linkedin</li>
-          <li class="nav-soc-item">Gmail</li>
+          <li class="nav-soc-item"><img src="assets/linkedinLogo.svg" alt=""></li>
+          <li class="nav-soc-item"><img src="assets/mailLogo.svg" alt=""></li>
         </ul>
       </nav>
       <div class="image-container site-container">
@@ -89,17 +89,35 @@ import Articlebox from "./components/Articlebox.svelte"
 
   .navigation-primary {
     display: flex;
+    cursor: pointer;
     list-style: none;
     width: 300px;
-    font-size: 14px;
+    font-size: 15px;
     justify-content: space-between;
+  }
+
+  .nav-primary-item {
+    color: var(--secondary);
+    filter: opacity(23%);
+  }
+
+  .nav-primary-item:hover {
+    /* color: var(--accent); */
+    filter: opacity(100%);
+    transition: all 0.3s;
+    font-weight: 500;
   }
 
   .navigation-soc{
     display: flex;
     justify-content: space-between;
-    width: 200px;
-    font-size: 14px;
+    width: 80px;
+    cursor: pointer;
+    list-style: none;
+  }
+
+  .navigation-soc img {
+    width: 20px;
   }
 
   .landing-section-image {
