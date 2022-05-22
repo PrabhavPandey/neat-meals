@@ -90,7 +90,9 @@ let articleData = [
       </p>
 
       <div class="article-grid">
-        <Articlebox articleTitle="Hi" article="Bye"/>
+        {#each articleData as arData (arData.id)}
+        <Articlebox articleTitle={arData.topic} articleDescp={arData.subline} articleRedir={arData.redirect}/>
+        {/each}
       </div>
     </section>
 
