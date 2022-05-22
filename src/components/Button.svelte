@@ -31,8 +31,4 @@
         transition: all 0.3s;
     }
 
-    section {
-        height: 100vh;
-    }
-
 </style>
