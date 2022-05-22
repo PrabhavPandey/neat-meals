@@ -8,6 +8,36 @@ let articleData = [
     topic: "This is what exactly Hritikh Roshan eats to stay in shape",
     subline: "Secrete recipe to the actors Greek God bod",
     redirect:  `www.youtube.com`
+  },
+  {
+    id:2,
+    topic: "This is what exactly Hritikh Roshan eats to stay in shape",
+    subline: "Secrete recipe to the actors Greek God bod",
+    redirect:  `www.youtube.com`
+  },
+  {
+    id:3,
+    topic: "This is what exactly Hritikh Roshan eats to stay in shape",
+    subline: "Secrete recipe to the actors Greek God bod",
+    redirect:  `www.youtube.com`
+  },
+  {
+    id:4,
+    topic: "This is what exactly Hritikh Roshan eats to stay in shape",
+    subline: "Secrete recipe to the actors Greek God bod",
+    redirect:  `www.youtube.com`
+  },
+  {
+    id:5,
+    topic: "This is what exactly Hritikh Roshan eats to stay in shape",
+    subline: "Secrete recipe to the actors Greek God bod",
+    redirect:  `www.youtube.com`
+  },
+  {
+    id:6,
+    topic: "This is what exactly Hritikh Roshan eats to stay in shape",
+    subline: "Secrete recipe to the actors Greek God bod",
+    redirect:  `www.youtube.com`
   }
 ]
 </script>
