@@ -1,8 +1,11 @@
 <script>
   import Articlebox from "./components/Articlebox.svelte"
-  import Button from "./components/Button.svelte";
-  import Landing from "./sections/Landing.svelte";
+  import Button from "./components/Button.svelte"
+  import Landing from "./sections/Landing.svelte"
+  import Services from "./sections/Services.svelte"
+
   let landingImage  = "assets/companyLogoHeroSection.jpg"
+  let serviceImage = "assets/DesginElement1.svg"
 
 
 let articleData = [
@@ -48,20 +51,7 @@ let articleData = [
 <main>
   <div>
     <Landing imageLink={landingImage}/>
-    <section class="services-section">
-      <div class="site-container section-container">
-        <div class="content-container">
-          <img class="services-desgin-section" src="assets/DesginElement1.svg" alt="">
-          <h1 class="services-section-h1">Services we offer</h1>
-          <p class="services-section-p">The Neat meals company provides its customers with a variety of services ranging from Subscriptions to Vanity kitchens desgined to suit your taste buds</p>
-        </div>
-
-        <div class="animation-container">
-          temp Placeholder for animation
-        </div>
-      </div>
-    </section>
-
+    <Services imageLinkSer={serviceImage}/>
     <section class="gallery-section site-container">
       <h1>Gallery</h1>
       <div class="gallery-container">
@@ -107,33 +97,6 @@ let articleData = [
 </main>
 
 <style>
-  .section-container {
-    /* background: red; */
-    height: 100vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .services-desgin-section {
-    width: 90px;
-  }
-
-  .services-section-h1 {
-    font-size: 48px;
-    font-weight: 600;
-    margin-bottom: 0;
-    margin-top: 5px;
-    color: var(--primary);
-  }
-
-  .services-section-p {
-    font-size: 16px;
-    max-width: 500px;
-    line-height: 167.5%;
-    margin-top: 5px;
-  }
-
   .gallery-section h1 {
     text-align: center;
     font-weight: 600;
@@ -259,6 +222,10 @@ let articleData = [
 
   .nav-soc-item img {
     width: 20px;
+  }
+
+  section {
+      height: 100vh;
   }
 
 </style>
