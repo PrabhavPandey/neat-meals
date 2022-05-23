@@ -3,7 +3,7 @@
 </script>
 
 <main>
-  
+
     <section class="services-section">
         <div class="site-container section-container">
           <div class="content-container">
@@ -13,7 +13,7 @@
           </div>
   
           <div class="animation-container">
-            temp Placeholder for animation
+            Placeholder for animation
           </div>
         </div>
       </section>
@@ -21,7 +21,6 @@
 
 <style>
     .section-container {
-    /* background: red; */
     height: 100vh;
     display: flex;
     justify-content: space-between;
@@ -49,5 +48,15 @@
 
   section {
       height: 100vh;
+
+  }
+
+  @media screen and (max-width: 400px) {
+    .section-container {
+      margin-top: 10vh;
+      flex-direction: column;
+      width: 70vw;
+    }
+
   }
 </style>

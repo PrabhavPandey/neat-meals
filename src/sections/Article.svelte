@@ -1,5 +1,5 @@
 <script>
-    import Articlebox from "../components/Articlebox.svelte"
+    import Articlebox from "../components/Articlebox.svelte";
     let articleData = [
     {
         id:1,
@@ -83,7 +83,18 @@
     column-gap: 50px;
   }
 
-  section {
-    height: 100vh;
+  @media screen and (max-width: 400px) {
+
+    .article-grid {
+      grid-template-columns: 1fr;
+      width: 84%;
+      margin: 0 auto;
+    }
+
+    .article-section-para {
+      width: 80%;
+      margin-bottom: 4vh;
+    }
+
   }
 </style>

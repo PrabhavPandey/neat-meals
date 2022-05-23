@@ -11,7 +11,7 @@
             <li class="nav-primary-item">Gallery</li>
             <li class="nav-primary-item">Articles</li>
           </ul>
-      
+       
           <ul class="navigation-soc">
             <li class="nav-soc-item"><img src="assets/linkedinLogo.svg" alt=""></li>
             <li class="nav-soc-item"><img src="assets/mailLogo.svg" alt=""></li>
@@ -32,7 +32,8 @@
   }
 
   nav {
-    padding-top: 50px;
+    width: 88vw;
+    padding-top: 35px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -42,15 +43,15 @@
     display: flex;
     cursor: pointer;
     list-style: none;
-    width: 300px;
-    font-size: 15px;
+    gap: 50px;
+    font-size: 16px;
     justify-content: space-between;
   }
 
   .nav-primary-item {
     transition: all 0.3s;
     color: var(--secondary);
-    filter: opacity(23%);
+    filter: opacity(60%);
   }
 
   .nav-primary-item:hover {
@@ -61,6 +62,7 @@
   }
 
   .navigation-soc{
+    margin-right: 3vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -74,7 +76,7 @@
   }
 
   .nav-soc-item img {
-    width: 20px;
+    width: 23px;
   }
 
   .landing-section-image {
@@ -95,11 +97,22 @@
 
   @media screen and (max-width: 400px) {
     section {
-      height: fit-content;
+      height: 100vh;
+      width: 100vw !important;
     }
 
     .landing-section-image {
+      margin-top: 10vh;
       width: 70%;
+    }
+
+    .navigation-primary {
+      font-size: 13px;
+      gap: 26px;
+    }
+
+    nav {
+      width: 100vw;
     }
     
   }

@@ -14,11 +14,7 @@
 
 <style>
     .article-box-container {
-        width: 280px;
-        padding-right: 4rem;
-        padding-left: 4rem;
-        padding-top: 2rem;
-        padding-bottom: 1.5rem;
+        padding: 2rem 4rem 1.5rem 4rem;
         border-radius: 15px;
         background: #FFFFFF;
         border: 1px solid #D8D8D8;
@@ -48,5 +44,13 @@
         color: var(--primary);
         font-size: 11px;
         font-weight: 600;
+    }
+
+    @media screen and (max-width: 400px) {
+        .article-box-container {
+            width: 90%;
+            padding: 14px 20px;
+        }
+
     }
 </style>

@@ -67,11 +67,23 @@
     list-style: none;
   }
 
-  /* .navigation-soc img {
-    width: 15px;
-  } */
-
   .nav-soc-item img {
     width: 20px;
+  }
+
+  @media screen and (max-width: 400px) {
+    .footer-container {
+      flex-direction: column;
+    }
+
+    .footer-nav {
+      gap: 20px;
+      margin-top: 5vh;
+      padding: 0;
+    }
+
+    .social-nav-2 {
+      padding: 0;
+    }
   }
 </style>

@@ -37,8 +37,7 @@
     margin-top: 50px;
     gap: 1.5rem;
     grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
-    grid-auto-rows: 240px;
-    grid-auto-columns: 300px;
+    height: 80vh;
   }
 
   .card-tall {
@@ -90,5 +89,9 @@
 
   section {
       height: 100vh;
+  }
+
+  @media screen and (max-width: 400px) {
+    
   }
 </style>
