@@ -255,6 +255,15 @@ let articleData = [
     padding: 0.5rem 1.5rem 0.5rem 1.5rem;
     border-radius: 10px;
     font-size: 15px;
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+
+  .btn-RD:hover {
+    color: black;
+    font-weight: 500;
+    background-color: var(--accent);
+    transition: all 0.3s;
   }
 
   .article-section-header {
