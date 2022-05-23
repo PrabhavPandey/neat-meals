@@ -4,7 +4,6 @@
   import Gallery from "./sections/Gallery.svelte"
   import Footer from "./sections/Footer.svelte"
   import Article from "./sections/Article.svelte"
-import Articlebox from "./components/Articlebox.svelte";
 
   let landingImage  = "assets/companyLogoHeroSection.jpg"
   let serviceImage = "assets/DesginElement1.svg"
