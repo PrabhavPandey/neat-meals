@@ -25,7 +25,7 @@
 </main>
 
 <style>
-    .fp-bg {
+  .fp-bg {
     width: 100vw;
     background-color: #2D3F6B;
     color: white;
@@ -91,5 +91,16 @@
 
   section {
     height: 100vh;
+  }
+
+  @media screen and (max-width: 400px) {
+    section {
+      height: fit-content;
+    }
+
+    .landing-section-image {
+      width: 70%;
+    }
+    
   }
 </style>

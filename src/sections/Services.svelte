@@ -3,12 +3,13 @@
 </script>
 
 <main>
+  
     <section class="services-section">
         <div class="site-container section-container">
           <div class="content-container">
             <img class="services-desgin-section" src={imageLinkSer} alt="">
             <h1 class="services-section-h1">Services we offer</h1>
-            <p class="services-section-p">The Neat meals company provides its customers with a variety of services ranging from Subscriptions to Vanity kitchens desgined to suit your taste buds</p>
+            <p class="services-section-p">Feel free to select from our range of services.</p>
           </div>
   
           <div class="animation-container">
