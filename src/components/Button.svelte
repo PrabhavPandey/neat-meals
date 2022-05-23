@@ -22,6 +22,7 @@
         width: fit-content;
         border: solid white 2px;
         color: white;
+        transition: all 0.3s;
     }
 
     .btn-style:hover {
