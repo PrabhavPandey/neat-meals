@@ -24,11 +24,12 @@
         height: 60px;
         width: 300px;
         align-items: center;
-        gap: 40px;
+        gap: 35px;
     }
 
     .box-title {
         font-size: 18px;
         font-weight: 600;
+        color: var(--primary);
     }
 </style>

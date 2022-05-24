@@ -41,4 +41,10 @@
   section {
     height: 100vh;
   }
+
+  @media screen and (max-width: 1030px){
+        .services-section {
+            flex-direction: column;
+        }
+    }
 </style>
