@@ -1,5 +1,8 @@
-<script></script>
+<script>
+</script>
 
-<main></main>
+<main>
+    about us page
+</main>
 
 <style></style>
