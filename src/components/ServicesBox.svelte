@@ -1,14 +1,14 @@
 <script>
-    // export let title = ''
-    // export let information = ''
-    // export let icon = ''
+    export let title;
+    export let icon;
+    export let information;
 </script>
 
 <main>
     <div class="box-container">
-        <img class="box-icon" src="assets/subicon.svg" alt="icon">
-        <h1 class="box-title">Chef on board</h1>
-        <p class="box-information">Get your neat meals delivered to you straight from our kitchen.</p>
+        <img class="box-icon" src="{icon}" alt="icon">
+        <h1 class="box-title">{title}</h1>
+        <p class="box-information">{information}</p>
     </div>
 </main>
 
