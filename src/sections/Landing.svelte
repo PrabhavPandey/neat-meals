@@ -8,8 +8,9 @@
         <nav class="site-container">
           <ul class="navigation-primary">
             <li><a class="nav-primary-item" href="#services-section">Services</a></li>
-            <li><a class="nav-primary-item" href="#gallery-section">Gallery</a></li>
+            <!-- <li><a class="nav-primary-item" href="#gallery-section">Gallery</a></li> -->
             <li><a class="nav-primary-item" href="#article-section">Articles</a></li>
+            <li><a class="nav-primary-item" href="#">About Us</a></li>
           </ul>
        
           <ul class="navigation-soc">
@@ -27,12 +28,12 @@
 <style>
   .fp-bg {
     width: 100vw;
-    background-color: #2D3F6B;
+    background-color: #2C3F6A;
     color: white;
   }
 
   nav {
-    width: 88vw;
+    width: 92vw;
     padding-top: 35px;
     display: flex;
     justify-content: space-between;
