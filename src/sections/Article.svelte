@@ -88,7 +88,7 @@
     padding-top: 70px;
   }
 
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 800px) {
 
     .article-grid {
       grid-template-columns: 1fr;
@@ -102,4 +102,5 @@
     }
 
   }
+
 </style>
