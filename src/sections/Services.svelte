@@ -4,7 +4,7 @@
 
 <main>
 
-    <section class="services-section">
+    <section id="services-section" class="services-section">
         <div class="site-container section-container">
           <div class="content-container">
             <img class="services-desgin-section" src={imageLinkSer} alt="">

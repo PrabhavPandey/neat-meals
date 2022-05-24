@@ -7,9 +7,9 @@
     <section class="section-hero fp-bg">
         <nav class="site-container">
           <ul class="navigation-primary">
-            <li class="nav-primary-item">Services</li>
-            <li class="nav-primary-item">Gallery</li>
-            <li class="nav-primary-item">Articles</li>
+            <li><a class="nav-primary-item" href="#services-section">Services</a></li>
+            <li><a class="nav-primary-item" href="#gallery-section">Gallery</a></li>
+            <li><a class="nav-primary-item" href="#article-section">Articles</a></li>
           </ul>
        
           <ul class="navigation-soc">
@@ -49,6 +49,7 @@
   }
 
   .nav-primary-item {
+    text-decoration: none;
     transition: all 0.3s;
     color: var(--secondary);
     filter: opacity(60%);

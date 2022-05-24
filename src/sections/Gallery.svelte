@@ -2,7 +2,7 @@
 </script>
 
 <main>
-    <section class="gallery-section site-container">
+    <section id="gallery-section" class="gallery-section site-container">
         <h1>Gallery</h1>
             <div class="gallery-container">
                 <div style="background-image:url('assets/InstaImg1.jpeg')" class="Box card-tall"></div>
@@ -49,10 +49,11 @@
   }
 
   section {
+    padding-top: 20px;
       height: 100vh;
   }
 
   @media screen and (max-width: 400px) {
-    
+    /*to be done later*/
   }
 </style>

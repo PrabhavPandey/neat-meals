@@ -42,7 +42,7 @@
 </script>
 
 <main>
-    <section class="article-section site-container">
+    <section id="article-section" class="article-section site-container">
         <h1 class="article-section-header">Recent Articles</h1>
         <p class="article-section-para">
           Lorem ipsum dolor sit amet, consectetur adipiscing
