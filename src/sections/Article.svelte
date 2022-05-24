@@ -9,7 +9,7 @@
     },
     {
         id:2,
-        topic: "This is what exactly Hritikh Roshan eats to stay in shape",
+        topic: "This is what exactly Hrithik Roshan eats to stay in shape",
         subline: "Secrete recipe to the actors Greek God bod",
         redirect:  'https://www.gqindia.com/live-well/content/exclusive-this-is-exactly-what-hrithik-roshan-eats-daily-to-stay-in-top-shape'
     },
