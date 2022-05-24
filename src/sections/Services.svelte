@@ -37,7 +37,7 @@
           <ServicesBox icon={serDa.icon} title={serDa.title} information={serDa.info}/>
           {/each}
         </div>
-        <img src="assets/arrD.svg" alt="">
+        <img class="arr-illus" src="assets/arrD.svg" alt="">
       </div>
     </section>
 </main>
@@ -47,7 +47,6 @@
     display: flex;
     background-size:  1200px 900px;
     background-position: center;
-    justify-content: space-between;
     align-items: center;
   }
 
@@ -82,8 +81,31 @@
   }
 
   @media screen and (max-width: 1030px){
-        .services-section {
-            flex-direction: column;
-        }
+    .services-section {
+      flex-direction: column;
+      gap: 70px;
     }
+    
+    .text-container-title {
+      font-size: 30px;
+      max-width: 400px;
+      text-align: center;
+    }
+
+    .text-container-header {
+      text-align: center;
+      font-size: 15px;
+    }
+
+    .arr-illus {
+      display: none;
+    }
+
+  }
+
+  @media screen and (min-width: 1030px) {
+    .services-section {
+      justify-content: space-between;
+    }
+  }
 </style>

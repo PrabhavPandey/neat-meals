@@ -70,4 +70,44 @@
     .box-icon {
         width: 38px;
     }
+
+    @media screen and (min-width: 1030px) {
+        .box-container:hover{
+            transform: translateX(-20%);
+            transition: 0.3s ease-in-out;
+            background-color: #0b183c;
+        }
+    }
+
+    @media screen and (max-width: 1030px) {
+        .box-title {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--primary);
+        }
+
+        .box-icon {
+            width: 34px;
+        }
+
+        .box-container {
+            border-radius: 17px;
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+            padding-bottom: 0.5rem;
+            padding-top: 0.5rem;
+            height: 70px;
+            width: 300px;
+            align-items: center;
+            gap: 30px;
+            cursor: pointer;
+            transition: 0.3s ease-in-out;
+        }
+
+        .box-container:hover{
+            transform: translateY(-10%);
+            transition: 0.3s ease-in-out;
+            background-color: #0b183c;
+        }
+    }
 </style>
