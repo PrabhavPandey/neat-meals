@@ -43,8 +43,8 @@
     display: flex;
     cursor: pointer;
     list-style: none;
-    gap: 50px;
-    font-size: 16px;
+    gap: 70px;
+    font-size: 14px;
     justify-content: space-between;
   }
 
