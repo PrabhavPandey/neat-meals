@@ -1,4 +1,5 @@
 <script>
+  import ServicesBox from "../components/ServicesBox.svelte";
 </script>
 
 <main>
@@ -10,19 +11,34 @@
       </div>
 
       <div class="services-component-container">
-        <div class="comp">Hi</div>
-        <div class="comp">Hi</div>
-        <div class="comp">Hi</div>
+        <div class="components">
+          <ServicesBox />
+        </div>
+        <!-- <img src="" alt="some-img"> -->
       </div>
     </section>
 </main>
 
 <style>
-  section {
-    padding-top: 100px;
-    padding-bottom: 100px;
+.services-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
-  @media screen and (max-width: 400px) {
-
+  .text-container-header {
+    color: var(--primary);
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 7px;
+  }
+  .text-container-title {
+    margin: 0;
+    font-size: 40px;
+    max-width: 600px;
+    font-weight: 600;
+    line-height: 132.5%;
+  }
+  section {
+    height: 100vh;
   }
 </style>
