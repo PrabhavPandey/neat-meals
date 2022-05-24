@@ -44,7 +44,7 @@
     cursor: pointer;
     list-style: none;
     gap: 70px;
-    font-size: 14px;
+    font-size: 15px;
     justify-content: space-between;
   }
 

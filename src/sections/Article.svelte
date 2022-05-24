@@ -83,6 +83,11 @@
     column-gap: 50px;
   }
 
+  section {
+    padding-bottom: 70px;
+    padding-top: 70px;
+  }
+
   @media screen and (max-width: 400px) {
 
     .article-grid {
