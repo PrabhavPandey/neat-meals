@@ -31,7 +31,7 @@
     }
 
     .box-title {
-        font-size: 18px;
+        font-size: 17px;
         font-weight: 600;
         color: var(--primary);
     }
@@ -61,9 +61,13 @@
         height: fit-content;
         width: fit-content;
         text-align: center;
-        font-size: 14px;
+        font-size: 13px;
         line-height: 167.5%;
         font-weight: 500;
         color: white;
+    }
+
+    .box-icon {
+        width: 38px;
     }
 </style>

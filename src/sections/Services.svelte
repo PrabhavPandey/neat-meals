@@ -25,7 +25,7 @@
 
 <main>
 
-    <section id="services-section" class="services-section site-container">
+    <section style="background-image:url('assets/IllusFr.svg')" id="services-section" class="services-section site-container">
       <div class="services-text-container">
         <p class="text-container-header">Services</p>
         <h1 class="text-container-title">Feel free to select from our wide range of services</h1>
@@ -37,6 +37,7 @@
           <ServicesBox icon={serDa.icon} title={serDa.title} information={serDa.info}/>
           {/each}
         </div>
+        <img src="assets/arrD.svg" alt="">
       </div>
     </section>
 </main>
@@ -44,9 +45,12 @@
 <style>
 .services-section {
     display: flex;
+    background-size:  1200px 900px;
+    background-position: center;
     justify-content: space-between;
     align-items: center;
   }
+
   .text-container-header {
     color: var(--primary);
     font-weight: 600;
@@ -61,14 +65,22 @@
     line-height: 132.5%;
   }
   section {
+    margin-top: 70px;
     height: 100vh;
   }
 
   .components {
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 30px;
   }
+
+  .services-component-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+
   @media screen and (max-width: 1030px){
         .services-section {
             flex-direction: column;
