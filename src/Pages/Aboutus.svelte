@@ -1,9 +1,10 @@
 <script>
     import Navbar from "../components/Navbar.svelte"
+    let pageState = true
 </script>
 
 <main>
-    <Navbar />
+    <Navbar pageLocation={pageState}/>
     <article class="site-container">
       <container>
         <h1>About Us</h1>

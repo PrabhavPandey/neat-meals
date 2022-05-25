@@ -1,21 +1,65 @@
 <script>
     let isActive = false;
-    const setState = () => { isActive = !isActive}
+    const setState = () => { isActive = !isActive }
+    export let pageLocation;
+    let navBarStyle = 'navigation-primary';
+    let navBarStyleSoc = 'navigation-soc';
+    let iconLinksDark = [
+      {
+        id:1,
+        link: 'assets/linkedinLogo.svg'
+      },
+      {
+        id:2,
+        link: 'assets/mailLogo.svg'
+      }
+    ]
+
+    let iconLinksLight = [
+      {
+        id:1,
+        link: 'assets/linkedinLogoAlt.svg'
+      },
+      {
+        id:2,
+        link: 'assets/mailLogoAlt.svg'
+      }
+    ]
+
+    if (pageLocation === true){
+      navBarStyle = 'navigation-primary navigation-primary-alt'
+      navBarStyleSoc = 'navigation-soc navigation-soc-alt'
+    }else {
+      navBarStyle = 'navigation-primary'
+      navBarStyleSoc = 'navigation-soc'
+    }
 </script>
 
 <main>
     <header>
         <nav class="pr-nav site-container">
-            <ul class="navigation-primary">
+            <ul class="{navBarStyle}">
+              {#if pageLocation}
+              <li><a class="nav-primary-item" href="">Home</a></li>
+              {/if}
               <li><a class="nav-primary-item" href="#services-section">Services</a></li>
               <!-- <li><a class="nav-primary-item" href="#gallery-section">Gallery</a></li> -->
               <li><a class="nav-primary-item" href="#article-section">Articles</a></li>
+              {#if !pageLocation}
               <li><a class="nav-primary-item" href="#">About Us</a></li>
+              {/if}
             </ul>
          
-            <ul class="navigation-soc">
-              <li class="nav-soc-item"><img src="assets/linkedinLogo.svg" alt=""></li>
-              <li class="nav-soc-item"><img src="assets/mailLogo.svg" alt=""></li>
+            <ul class={navBarStyleSoc}>
+              {#if pageLocation}
+              {#each iconLinksLight as iconL (iconL.id)}
+              <li class="nav-soc-item"><img src={iconL.link} alt=""></li>
+              {/each}
+              {:else}
+              {#each iconLinksDark as iconD (iconD.id)}
+                <li class="nav-soc-item"><img src="{iconD.link}" alt=""></li>
+              {/each}
+              {/if}
             </ul>
         </nav>
         <div class="mobile-Holder">
@@ -25,8 +69,8 @@
             </button>
          </div>
          <div class="mobile-navigation" class:is-active={isActive}>
-            <a class="mobNav-item" href="">Services</a>
-            <a class="mobNav-item" href="">Articles</a>
+            <a class="mobNav-item" href="#services-section">Services</a>
+            <a class="mobNav-item" href="#article-section">Articles</a>
             <a class="mobNav-item" href="">About us</a>
             <a class="mobNav-item" href="">Email</a>
             <a class="mobNav-item" href="">Linkedin</a>
@@ -43,7 +87,6 @@
     justify-content: space-between;
     align-items: center;
   }
-
   .navigation-primary {
     display: flex;
     cursor: pointer;
@@ -180,6 +223,15 @@
 .mobBtn-Holder {
   position: absolute;
   z-index: 4;
+}
+
+.navigation-primary-alt li a{
+  color: black;
+  font-weight: 500;
+}
+
+.navigation-soc-alt li img {
+  color: black;
 }
 
 </style>
