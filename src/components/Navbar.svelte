@@ -2,12 +2,43 @@
     let isActive = false;
     const setState = () => { isActive = !isActive }
     export let pageLocation;
+    let navBarStyle = 'navigation-primary';
+    let navBarStyleSoc = 'navigation-soc';
+    let iconLinksDark = [
+      {
+        id:1,
+        link: 'assets/linkedinLogo.svg'
+      },
+      {
+        id:2,
+        link: 'assets/mailLogo.svg'
+      }
+    ]
+
+    let iconLinksLight = [
+      {
+        id:1,
+        link: 'assets/linkedinLogoAlt.svg'
+      },
+      {
+        id:2,
+        link: 'assets/mailLogoAlt.svg'
+      }
+    ]
+
+    if (pageLocation === true){
+      navBarStyle = 'navigation-primary navigation-primary-alt'
+      navBarStyleSoc = 'navigation-soc navigation-soc-alt'
+    }else {
+      navBarStyle = 'navigation-primary'
+      navBarStyleSoc = 'navigation-soc'
+    }
 </script>
 
 <main>
     <header>
         <nav class="pr-nav site-container">
-            <ul class="navigation-primary">
+            <ul class="{navBarStyle}">
               {#if pageLocation}
               <li><a class="nav-primary-item" href="">Home</a></li>
               {/if}
@@ -17,9 +48,16 @@
               <li><a class="nav-primary-item" href="#">About Us</a></li>
             </ul>
          
-            <ul class="navigation-soc">
-              <li class="nav-soc-item"><img src="assets/linkedinLogo.svg" alt=""></li>
-              <li class="nav-soc-item"><img src="assets/mailLogo.svg" alt=""></li>
+            <ul class={navBarStyleSoc}>
+              {#if pageLocation}
+              {#each iconLinksLight as iconL (iconL.id)}
+              <li class="nav-soc-item"><img src={iconL.link} alt=""></li>
+              {/each}
+              {:else}
+              {#each iconLinksDark as iconD (iconD.id)}
+                <li class="nav-soc-item"><img src="{iconD.link}" alt=""></li>
+              {/each}
+              {/if}
             </ul>
         </nav>
         <div class="mobile-Holder">
@@ -47,7 +85,6 @@
     justify-content: space-between;
     align-items: center;
   }
-
   .navigation-primary {
     display: flex;
     cursor: pointer;
@@ -184,6 +221,15 @@
 .mobBtn-Holder {
   position: absolute;
   z-index: 4;
+}
+
+.navigation-primary-alt li a{
+  color: black;
+  font-weight: 500;
+}
+
+.navigation-soc-alt li img {
+  color: black;
 }
 
 </style>
