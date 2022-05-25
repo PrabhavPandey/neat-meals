@@ -40,13 +40,13 @@
         <nav class="pr-nav site-container">
             <ul class="{navBarStyle}">
               {#if pageLocation}
-              <li><a class="nav-primary-item" href="">Home</a></li>
+              <li><a class="nav-primary-item" href="#/">Home</a></li>
               {/if}
               <li><a class="nav-primary-item" href="#services-section">Services</a></li>
               <!-- <li><a class="nav-primary-item" href="#gallery-section">Gallery</a></li> -->
               <li><a class="nav-primary-item" href="#article-section">Articles</a></li>
               {#if !pageLocation}
-              <li><a class="nav-primary-item" href="#">About Us</a></li>
+              <li><a class="nav-primary-item" href="#/about">About Us</a></li>
               {/if}
             </ul>
          
@@ -71,8 +71,8 @@
          <div class="mobile-navigation" class:is-active={isActive}>
             <a class="mobNav-item" href="#services-section">Services</a>
             <a class="mobNav-item" href="#article-section">Articles</a>
-            <a class="mobNav-item" href="">About us</a>
-            <a class="mobNav-item" href="">Email</a>
+            <a class="mobNav-item" href="#/about">About us</a>
+            <a class="mobNav-item" href="mailto:neatmealscompany@gmail.com">Email</a>
             <a class="mobNav-item" href="">Linkedin</a>
         </div>
       </div>
