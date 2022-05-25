@@ -18,11 +18,20 @@
               <li class="nav-soc-item"><img src="assets/mailLogo.svg" alt=""></li>
             </ul>
         </nav>
-        <div class="mobile-navHolder">
+        <div class="mobile-Holder">
+         <div class="mobBtn-Holder">
             <button on:click={setState} class="hamburger" class:is-active={isActive}>
-                <div class="bar"></div>
+              <div class="bar"></div>
             </button>
+         </div>
+         <div class="mobile-navigation" class:is-active={isActive}>
+            <a class="mobNav-item" href="">Services</a>
+            <a class="mobNav-item" href="">Articles</a>
+            <a class="mobNav-item" href="">About us</a>
+            <a class="mobNav-item" href="">Email</a>
+            <a class="mobNav-item" href="">Linkedin</a>
         </div>
+      </div>
     </header>
 </main>
 
@@ -87,6 +96,7 @@
 	background: none;
 	outline: none;
 	border: none;
+  background: blue;
 }
 
 .hamburger .bar, .hamburger:after, .hamburger:before {
@@ -123,16 +133,53 @@
     }
 }
 
-@media only screen and (min-width: 768px) {
-	.hamburger {
-		display: none;
-        left: 0;
-	}
+.mobile-navigation {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  min-height: 100vh;
+  left: 100%;
+  width: 100%;
+  min-height: 100vh;
+  display: block;
+  z-index: 98;
+  transition: 0.4s;
+  background: red;
 }
 
-.mobile-navHolder {
-    display: flex;
-    justify-content: flex-end;
+.mobile-navigation.is-active {
+  left: 50%;
+}
+
+.mobile-navigation a {
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto 16px;
+  text-align: center;
+  padding: 12px 16px;
+  color: #FFF;
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 768px) {
+
+.mobile-navigation {
+  display: none;
+}
+.hamburger {
+  display: none;
+      left: 0;
+}
+}
+
+.mobile-Holder {
+  position: relative;
+}
+
+.mobBtn-Holder {
+  position: absolute;
+  z-index: 4;
 }
 
 </style>
