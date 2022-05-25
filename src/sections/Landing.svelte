@@ -5,7 +5,7 @@
 </script>
 
 <main>
-    <section class="section-hero fp-bg">
+    <section id="landing-section" class="section-hero fp-bg">
         <div class="image-container site-container">
           <Navbar />
           <img class="landing-section-image" src={imageLink} alt="bgimage" />

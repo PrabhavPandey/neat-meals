@@ -40,25 +40,24 @@
         <nav class="pr-nav site-container">
             <ul class="{navBarStyle}">
               {#if pageLocation}
-              <li><a class="nav-primary-item" href="#/">Home</a></li>
+                <li><a class="nav-primary-item" href="#/">Home</a></li>
+                {:else}
+                  <li><a class="nav-primary-item" href="#/about">About us</a></li>
               {/if}
-              <li><a class="nav-primary-item" href="#services-section">Services</a></li>
-              <!-- <li><a class="nav-primary-item" href="#gallery-section">Gallery</a></li> -->
-              <li><a class="nav-primary-item" href="#article-section">Articles</a></li>
-              {#if !pageLocation}
-              <li><a class="nav-primary-item" href="#/about">About Us</a></li>
-              {/if}
+                <li><a class="nav-primary-item" href="#services-section">Services</a></li>
+                <!-- <li><a class="nav-primary-item" href="#gallery-section">Gallery</a></li> -->
+                <li><a class="nav-primary-item" href="#article-section">Articles</a></li>
             </ul>
          
             <ul class={navBarStyleSoc}>
               {#if pageLocation}
-              {#each iconLinksLight as iconL (iconL.id)}
-              <li class="nav-soc-item"><img src={iconL.link} alt=""></li>
-              {/each}
+                {#each iconLinksLight as iconL (iconL.id)}
+                  <li class="nav-soc-item"><img src={iconL.link} alt=""></li>
+                {/each}
               {:else}
-              {#each iconLinksDark as iconD (iconD.id)}
-                <li class="nav-soc-item"><img src="{iconD.link}" alt=""></li>
-              {/each}
+                {#each iconLinksDark as iconD (iconD.id)}
+                  <li class="nav-soc-item"><img src="{iconD.link}" alt=""></li>
+                {/each}
               {/if}
             </ul>
         </nav>
@@ -191,7 +190,7 @@
 }
 
 .mobile-navigation.is-active {
-  left: 50%;
+  left: 0;
 }
 
 .mobile-navigation a {

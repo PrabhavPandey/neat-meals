@@ -67,6 +67,7 @@
   }
 
   .article-section-para {
+    display: none;
     font-size: 14px;
     margin-top: 5px;
     width: 500px;

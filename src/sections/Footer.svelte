@@ -7,10 +7,10 @@
         <div class="site-container footer-container">
           <Button><a href="mailto:neatmealscompany@gmail.com">Contact us</a></Button>
             <ul class="footer-nav">
-              <li class="footer-nav-item">Home</li>
-              <li class="footer-nav-item">Services</li>
+              <li class="footer-nav-item"><a href="#landing-section">Home</a></li>
+              <li class="footer-nav-item"><a href="#services-section">Services</a></li>
               <!-- <li class="footer-nav-item">Gallery</li> -->
-              <li class="footer-nav-item">About us</li>
+              <li class="footer-nav-item"><a href="#/about">About us</a></li>
             </ul>
   
             <ul class="social-nav-2">
