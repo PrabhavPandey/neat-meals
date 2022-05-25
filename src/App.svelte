@@ -4,8 +4,8 @@
 </script>
 
 <main>
-  <Aboutus />
-  <!-- <Home /> -->
+  <!-- <Aboutus /> -->
+  <Home />
 </main>
 
 <style></style>
