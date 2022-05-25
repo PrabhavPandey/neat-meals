@@ -4,7 +4,7 @@
 </script>
 
 <main>
-  <Home />
+  <Aboutus />
 </main>
 
 <style></style>
