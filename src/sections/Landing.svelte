@@ -9,7 +9,7 @@
         <div class="image-container site-container">
           <Navbar />
           <img class="landing-section-image" src={imageLink} alt="bgimage" />
-          <Button>Learn more</Button>
+          <Button><a href="#/about">Learn more</a></Button>
         </div>
       </section>
 </main>
@@ -30,6 +30,15 @@
     align-items: center;
     gap: 30px;
     padding-bottom: 50px;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+  a:hover {
+    color: var(--primary);
   }
 
   section {

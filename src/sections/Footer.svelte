@@ -5,7 +5,7 @@
 <main>
     <footer class="footer-section">
         <div class="site-container footer-container">
-          <Button>Contact us</Button>
+          <Button><a href="mailto:neatmealscompany@gmail.com">Contact us</a></Button>
             <ul class="footer-nav">
               <li class="footer-nav-item">Home</li>
               <li class="footer-nav-item">Services</li>
@@ -27,6 +27,11 @@
     margin-top: 50px;
     padding-bottom: 20px;
     background-color: #2D3F6B;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
   }
 
   .footer-container {
