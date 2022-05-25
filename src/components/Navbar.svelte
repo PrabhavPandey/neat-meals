@@ -1,12 +1,16 @@
 <script>
     let isActive = false;
-    const setState = () => { isActive = !isActive}
+    const setState = () => { isActive = !isActive }
+    export let pageLocation;
 </script>
 
 <main>
     <header>
         <nav class="pr-nav site-container">
             <ul class="navigation-primary">
+              {#if pageLocation}
+              <li><a class="nav-primary-item" href="">Home</a></li>
+              {/if}
               <li><a class="nav-primary-item" href="#services-section">Services</a></li>
               <!-- <li><a class="nav-primary-item" href="#gallery-section">Gallery</a></li> -->
               <li><a class="nav-primary-item" href="#article-section">Articles</a></li>

@@ -4,7 +4,7 @@
 </script>
 
 <main>
-  <Home />
+  <Home/>
 </main>
 
 <style></style>

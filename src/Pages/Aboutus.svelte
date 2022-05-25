@@ -3,7 +3,7 @@
 </script>
 
 <main>
-    <Navbar />
+    <Navbar pageLocation=true/>
     <article class="site-container">
       <container>
         <h1>About Us</h1>
