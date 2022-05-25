@@ -45,7 +45,9 @@
               <li><a class="nav-primary-item" href="#services-section">Services</a></li>
               <!-- <li><a class="nav-primary-item" href="#gallery-section">Gallery</a></li> -->
               <li><a class="nav-primary-item" href="#article-section">Articles</a></li>
+              {#if !pageLocation}
               <li><a class="nav-primary-item" href="#">About Us</a></li>
+              {/if}
             </ul>
          
             <ul class={navBarStyleSoc}>
@@ -67,8 +69,8 @@
             </button>
          </div>
          <div class="mobile-navigation" class:is-active={isActive}>
-            <a class="mobNav-item" href="">Services</a>
-            <a class="mobNav-item" href="">Articles</a>
+            <a class="mobNav-item" href="#services-section">Services</a>
+            <a class="mobNav-item" href="#article-section">Articles</a>
             <a class="mobNav-item" href="">About us</a>
             <a class="mobNav-item" href="">Email</a>
             <a class="mobNav-item" href="">Linkedin</a>
