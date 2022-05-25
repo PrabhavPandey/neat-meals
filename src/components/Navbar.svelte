@@ -73,7 +73,7 @@
             <a class="mobNav-item" href="#article-section">Articles</a>
             <a class="mobNav-item" href="#/about">About us</a>
             <a class="mobNav-item" href="mailto:neatmealscompany@gmail.com">Email</a>
-            <a class="mobNav-item" href="">Linkedin</a>
+            <a class="mobNav-item" href="https://www.linkedin.com/company/neat-meals-company/">Linkedin</a>
         </div>
       </div>
     </header>
