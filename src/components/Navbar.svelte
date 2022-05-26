@@ -1,4 +1,5 @@
 <script>
+    import { scrollTo } from 'svelte-scrolling'
     let isActive = false;
     const setState = () => { isActive = !isActive }
     export let pageLocation;
@@ -7,22 +8,26 @@
     let iconLinksDark = [
       {
         id:1,
-        link: 'assets/linkedinLogo.svg'
+        link: 'assets/linkedinLogo.svg',
+        href: 'https://www.linkedin.com/company/neat-meals-company/'
       },
       {
         id:2,
-        link: 'assets/mailLogo.svg'
+        link: 'assets/mailLogo.svg',
+        href: 'mailto:neatmealscompany@gmail.com'
       }
     ]
 
     let iconLinksLight = [
       {
         id:1,
-        link: 'assets/linkedinLogoAlt.svg'
+        link: 'assets/linkedinLogoAlt.svg',
+        href: 'https://www.linkedin.com/company/neat-meals-company/'
       },
       {
         id:2,
-        link: 'assets/mailLogoAlt.svg'
+        link: 'assets/mailLogoAlt.svg',
+        href: 'mailto:neatmealscompany@gmail.com'
       }
     ]
 
@@ -44,19 +49,19 @@
                 {:else}
                   <li><a class="nav-primary-item" href="#/about">About us</a></li>
               {/if}
-                <li><a class="nav-primary-item" href="#services-section">Services</a></li>
+                <li><a use:scrollTo={'service'} class="nav-primary-item" href="#services-section">Services</a></li>
                 <!-- <li><a class="nav-primary-item" href="#gallery-section">Gallery</a></li> -->
-                <li><a class="nav-primary-item" href="#article-section">Articles</a></li>
+                <li><a use:scrollTo={'article'} class="nav-primary-item" href="#article-section">Articles</a></li>
             </ul>
          
             <ul class={navBarStyleSoc}>
               {#if pageLocation}
                 {#each iconLinksLight as iconL (iconL.id)}
-                  <li class="nav-soc-item"><img src={iconL.link} alt=""></li>
+                  <li class="nav-soc-item"><a href={iconL.href}><img src={iconL.link} alt=""></a></li>
                 {/each}
               {:else}
                 {#each iconLinksDark as iconD (iconD.id)}
-                  <li class="nav-soc-item"><img src="{iconD.link}" alt=""></li>
+                  <li class="nav-soc-item"><a href={iconD.href}><img src="{iconD.link}" alt=""></a></li>
                 {/each}
               {/if}
             </ul>
@@ -68,8 +73,8 @@
             </button>
          </div>
          <div class="mobile-navigation" class:is-active={isActive}>
-            <a class="mobNav-item" href="#services-section">Services</a>
-            <a class="mobNav-item" href="#article-section">Articles</a>
+            <a use:scrollTo={'service'} class="mobNav-item" href="#services-section">Services</a>
+            <a use:scrollTo={'article'} class="mobNav-item" href="#article-section">Articles</a>
             <a class="mobNav-item" href="#/about">About us</a>
             <a class="mobNav-item" href="mailto:neatmealscompany@gmail.com">Email</a>
             <a class="mobNav-item" href="https://www.linkedin.com/company/neat-meals-company/">Linkedin</a>

@@ -1,4 +1,5 @@
 <script>
+    import { scrollRef } from 'svelte-scrolling'
     import Articlebox from "../components/Articlebox.svelte";
     let articleData = [
     {
@@ -42,7 +43,7 @@
 </script>
 
 <main>
-    <section id="article-section" class="article-section site-container">
+    <section use:scrollRef={'article'} id="article-section" class="article-section site-container">
         <h1 class="article-section-header">Recent Articles</h1>
         <p class="article-section-para">
           Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -58,7 +59,7 @@
 </main>
 
 <style>
-    .article-section-header {
+  .article-section-header {
     font-size: 28px;
     margin-bottom: 0;
     color: var(--primary);

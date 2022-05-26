@@ -1,4 +1,5 @@
 <script>
+  import { scrollRef } from 'svelte-scrolling'
   import ServicesBox from "../components/ServicesBox.svelte";
 
   let serviceData = [
@@ -25,7 +26,7 @@
 
 <main>
 
-    <section style="background-image:url('assets/IllusFr.svg')" id="services-section" class="services-section site-container">
+    <section use:scrollRef={'service'} style="background-image:url('assets/IllusFr.svg')" id="services-section" class="services-section site-container">
       <div class="services-text-container">
         <p class="text-container-header">Services</p>
         <h1 class="text-container-title">Feel free to select from our wide range of services</h1>

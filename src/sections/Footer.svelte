@@ -1,5 +1,6 @@
 <script>
-        import Button from "../components/Button.svelte";
+    import {scrollTo, scrollTop} from 'svelte-scrolling'
+    import Button from "../components/Button.svelte";
 </script>
 
 <main>
@@ -7,8 +8,8 @@
         <div class="site-container footer-container">
           <Button><a href="mailto:neatmealscompany@gmail.com">Contact us</a></Button>
             <ul class="footer-nav">
-              <li class="footer-nav-item"><a href="#landing-section">Home</a></li>
-              <li class="footer-nav-item"><a href="#services-section">Services</a></li>
+              <li use:scrollTo={'home'} class="footer-nav-item"><a href="#landing-section">Home</a></li>
+              <li use:scrollTo={'service'} class="footer-nav-item"><a href="#services-section">Services</a></li>
               <!-- <li class="footer-nav-item">Gallery</li> -->
               <li class="footer-nav-item"><a href="#/about">About us</a></li>
             </ul>

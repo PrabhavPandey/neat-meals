@@ -1,11 +1,12 @@
 <script>
+    import {scrollRef} from "svelte-scrolling"
     import Button from "../components/Button.svelte";
     import Navbar from "../components/Navbar.svelte";
     export let imageLink;
 </script>
 
 <main>
-    <section id="landing-section" class="section-hero fp-bg">
+    <section use:scrollRef={'home'} id="landing-section" class="section-hero fp-bg">
         <div class="image-container site-container">
           <Navbar />
           <img class="landing-section-image" src={imageLink} alt="bgimage" />
