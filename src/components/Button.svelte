@@ -1,5 +1,4 @@
 <script>
-    export let type = 'button'
     export let btnName
     export let btnLink
 </script>

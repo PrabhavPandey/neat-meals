@@ -33,15 +33,6 @@
     padding-bottom: 50px;
   }
 
-  a {
-    text-decoration: none;
-    color: white;
-  }
-
-  a:hover {
-    color: var(--primary);
-  }
-
   section {
     height: 100vh;
   }
