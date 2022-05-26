@@ -84,6 +84,7 @@
   @media screen and (max-width: 1030px){
     .services-section {
       flex-direction: column;
+      justify-content: center;
       gap: 70px;
     }
     

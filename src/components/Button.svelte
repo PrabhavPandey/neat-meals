@@ -50,4 +50,10 @@
         transition: all 0.3s;
     }
 
+    @media only screen and (max-width: 800px){
+        .btn-style {
+            font-size: 12px;
+        }
+    }
+
 </style>
