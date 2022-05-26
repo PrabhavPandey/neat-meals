@@ -1,17 +1,31 @@
 <script>
     export let btnName
     export let btnLink
+
+    let fadeState = 'faddedState'
+
+    const fadeIn = () => { 
+        fadeState = 'btn-style'
+        console.log(fadeState) 
+    }
+
+    setTimeout(() => {
+        fadeIn()
+    }, 600);
 </script>
 
-<main class="animation">
-    <a class="btn-style" href={btnLink}>{btnName}</a>
+<main>
+    <a class={fadeState} href={btnLink}>{btnName}</a>
 </main>
 
 <style>
 
-    .animation {
-    transition: all 1s;
+   .faddedState {
+        opacity: 0;
+        transform: translateY(-10%);
+        transition: all 1s;
     }
+
     .btn-style {
         padding-left: 1.5rem;
         padding-right: 1.5rem;

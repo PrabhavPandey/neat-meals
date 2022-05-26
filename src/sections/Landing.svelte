@@ -5,15 +5,10 @@
     export let imageLink;
 
     let fadeState = 'faddedState'
-    let fadeStateBtn = true
 
     const fadeIn = () => {
       fadeState = 'landing-section-image'
       console.log(fadeState)
-    }
-
-    const fadeInBtn = () => {
-
     }
 
     setTimeout(() => {
