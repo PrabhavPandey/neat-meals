@@ -1,16 +1,22 @@
 <script>
-</script>
+    </script>
 
 <main>
     <section id="gallery-section" class="gallery-section site-container">
         <h1>Gallery</h1>
             <div class="gallery-container">
-                <div style="background-image:url('assets/InstaImg1.jpeg')" class="Box card-tall"></div>
-                <div style="background-image:url('assets/InstaImg2.jpeg')" class="Box"></div>
-                <div style="background-image:url('assets/InstaImg3.jpeg')" class="Box card-wide"></div>
-                <div style="background-image:url('assets/InstaImg4.jpeg')" class="Box card-wide"></div>
-                <div style="background-image:url('assets/InstaImg5.jpeg')" class="Box card-tall-reverse"></div>
+              <img src="./assets/InstaImg1.jpeg" alt="background" />
+              <img src="./assets/InstaImg2.jpeg" alt="background" />
+              <img src="./assets/InstaImg3.jpeg" alt="background" />
+              <img src="./assets/InstaImg4.jpeg" alt="background" />
+              <img src="./assets/InstaImg5.jpeg" alt="background" />
+              <img src="./assets/InstaImg6.jpeg" alt="background" />
+              <img src="./assets/InstaImg7.jpeg" alt="background" />
+              <img src="./assets/InstaImg8.jpeg" alt="background" />
+              <img src="./assets/InstaImg9.jpeg" alt="background" />
+              <img src="./assets/InstaImg10.jpeg" alt="background" />
             </div>
+
     </section>
 </main>
 
@@ -19,41 +25,45 @@
     text-align: center;
     font-weight: 600;
     color: var(--primary);
+    margin-bottom: 8vh;
   }
 
   .gallery-container {
     display: grid;
-    margin-top: 50px;
-    gap: 1.8rem;
-    grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
-    height: 80vh;
+    grid-template-columns: repeat(5,1fr);
+    width: 90vw;
+    row-gap: 4vw;
+    column-gap: 2vw;
+    margin: 0 auto;
   }
 
-  .card-tall {
-    grid-row: span 2 / auto;
-  }
-
-  .card-wide {
-    grid-column: span 2 / auto;
-  }
-
-  .Box {
-    background-size: cover;
+  img {
+    height: 40vh;
+    width: 16vw;
     filter: brightness(40%);
     transition: all 0.5s;
+    border-radius: 10px;
   }
 
-  .Box:hover {
+  img:hover {
     filter: brightness(100%);
+    box-shadow: 7px 10px #888888;
     transform: scale(1.1);
   }
 
-  section {
-    padding-top: 20px;
-      height: 100vh;
-  }
-
   @media screen and (max-width: 400px) {
+    .gallery-container {
+    grid-template-columns: repeat(2,1fr);
+    width: 90vw;
+    row-gap: 10vw;
+    column-gap: 5vw;
+    margin: 0 auto;
+    }
+
+    img {
+    height: 30vh;
+    width: 42vw;
+    }
     /*to be done later*/
   }
 </style>

@@ -1,7 +1,7 @@
 <script lang="ts">
-  import Home from './Pages/Home.svelte';
+  import Router from 'svelte-spa-router';
   import Aboutus from './Pages/Aboutus.svelte';
-  import Router from 'svelte-spa-router'
+  import Home from './Pages/Home.svelte';
   //Route defination (single page mapping only)
   const Pages = {
     "/": Home,
@@ -13,4 +13,8 @@
   <Router routes={Pages}/>
 </main>
 
-<style></style>
+<style>
+  main {
+    background-color: white;
+  }
+</style>
