@@ -77,13 +77,18 @@
     width: 20px;
   }
 
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 750px) {
     .footer-container {
       flex-direction: column;
+      align-items: center;
+    }
+
+    .footer-nav-item {
+      font-size: 13px;
     }
 
     .footer-nav {
-      gap: 20px;
+      gap: 40px;
       margin-top: 5vh;
       padding: 0;
     }

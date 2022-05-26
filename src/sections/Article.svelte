@@ -103,6 +103,11 @@
       margin-bottom: 4vh;
     }
 
+    .article-section-header {
+      font-size: 25px;
+      margin-bottom: 40px;
+    }
+
   }
 
 </style>
