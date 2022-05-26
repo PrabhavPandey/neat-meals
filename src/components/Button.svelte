@@ -3,11 +3,15 @@
     export let btnLink
 </script>
 
-<main>
+<main class="animation">
     <a class="btn-style" href={btnLink}>{btnName}</a>
 </main>
 
 <style>
+
+    .animation {
+    transition: all 1s;
+    }
     .btn-style {
         padding-left: 1.5rem;
         padding-right: 1.5rem;

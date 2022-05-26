@@ -3,13 +3,29 @@
     import Button from "../components/Button.svelte";
     import Navbar from "../components/Navbar.svelte";
     export let imageLink;
+
+    let fadeState = 'faddedState'
+    let fadeStateBtn = true
+
+    const fadeIn = () => {
+      fadeState = 'landing-section-image'
+      console.log(fadeState)
+    }
+
+    const fadeInBtn = () => {
+
+    }
+
+    setTimeout(() => {
+      fadeIn()
+    }, 600);
 </script>
 
 <main>
     <section use:scrollRef={'home'} id="landing-section" class="section-hero fp-bg">
         <div class="image-container site-container">
           <Navbar />
-          <img class="landing-section-image" src={imageLink} alt="bgimage" />
+          <img class={fadeState} src={imageLink} alt="bgimage" />
           <Button btnLink="#/about" btnName="Learn more"/>
         </div>
       </section>
@@ -21,8 +37,17 @@
     background-color: #2C3F6A;
     color: white;
   }
+
+  .faddedState {
+    opacity: 0;
+    transform: translateY(-10%);
+    transition: all 1s;
+  }
   .landing-section-image {
+    opacity: 1;
+    transform: translateY(0);
     width: 470px;
+    transition: all 1s;
   }
 
   .image-container {
