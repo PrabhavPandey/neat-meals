@@ -1,5 +1,5 @@
 <script>
-    import {scrollTo, scrollTop} from 'svelte-scrolling'
+    import { scrollTo } from 'svelte-scrolling';
     import Button from "../components/Button.svelte";
 </script>
 
@@ -15,8 +15,8 @@
             </ul>
   
             <ul class="social-nav-2">
-              <li class="nav-soc-item"><img src="assets/linkedinLogo.svg" alt=""></li>
-              <li class="nav-soc-item"><img src="assets/mailLogo.svg" alt=""></li>
+              <li class="nav-soc-item"><a href="https://www.linkedin.com/company/neat-meals-company/"><img src="assets/linkedinLogo.svg" alt=""></a></li>
+              <li class="nav-soc-item"><a href="mailto:neatmealscompany@gmail.com"><img src="assets/mailLogo.svg" alt=""></a></li>
             </ul>
         </div>
       </footer>
@@ -54,7 +54,7 @@
     font-size: 15px;
     cursor: pointer;
     color: var(--secondary);
-    filter: opacity(23%);
+    filter: opacity(63%);
   }
 
   .footer-nav-item:hover {

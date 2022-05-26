@@ -156,4 +156,14 @@
   color: black;
 }
 }
+
+@media only screen and (max-width: 400px) {
+
+  .navigation-primary {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+}
 </style>
