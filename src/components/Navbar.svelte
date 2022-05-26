@@ -5,6 +5,18 @@
     export let pageLocation;
     let navBarStyle = 'navigation-primary';
     let navBarStyleSoc = 'navigation-soc';
+    let fadeState = 'faddedState'
+
+    const fadeIn = () => { 
+      fadeState = 'nav-container'
+      console.log(fadeState) 
+    }
+
+    setTimeout(() => {
+        fadeIn()
+    }, 600);
+
+
     let iconLinksDark = [
       {
         id:1,
@@ -41,7 +53,7 @@
 </script>
 
 <main>
-    <header>
+    <header class={fadeState}>
         <nav class="pr-nav site-container">
             <ul class="{navBarStyle}">
               {#if pageLocation}
@@ -84,6 +96,17 @@
 </main>
 
 <style>
+
+    .faddedState {
+      opacity: 0;
+      transform: translateY(-10%);
+      transition: all 0.5s;
+    }
+    .nav-container {
+      opacity: 1;
+      transform: translateY(0);
+      transition: all 0.5s;
+    }
     nav {
     width: 92vw;
     padding-top: 35px;
