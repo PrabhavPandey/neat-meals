@@ -1,11 +1,11 @@
 <script>
     export let type = 'button'
+    export let btnName
+    export let btnLink
 </script>
 
 <main>
-    <button {type} class="btn-style">
-        <slot></slot>
-    </button>
+    <a class="btn-style" href={btnLink}>{btnName}</a>
 </main>
 
 <style>
@@ -22,6 +22,7 @@
         width: fit-content;
         border: solid white 2px;
         color: white;
+        text-decoration: none;
         transition: all 0.3s;
     }
 

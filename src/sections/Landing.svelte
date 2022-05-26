@@ -10,7 +10,7 @@
         <div class="image-container site-container">
           <Navbar />
           <img class="landing-section-image" src={imageLink} alt="bgimage" />
-          <Button><a href="#/about">Learn more</a></Button>
+          <Button btnLink="#/about" btnName="Learn more"/>
         </div>
       </section>
 </main>

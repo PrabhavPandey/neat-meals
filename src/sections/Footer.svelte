@@ -6,7 +6,7 @@
 <main>
     <footer class="footer-section">
         <div class="site-container footer-container">
-          <Button><a href="mailto:neatmealscompany@gmail.com">Contact us</a></Button>
+          <Button btnLink="mailto:neatmealscompany@gmail.com" btnName="Contact us"/>
             <ul class="footer-nav">
               <li use:scrollTo={'home'} class="footer-nav-item"><a href="#landing-section">Home</a></li>
               <li use:scrollTo={'service'} class="footer-nav-item"><a href="#services-section">Services</a></li>
