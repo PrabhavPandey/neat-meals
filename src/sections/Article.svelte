@@ -1,5 +1,5 @@
 <script>
-    import { scrollRef } from 'svelte-scrolling'
+    import { scrollRef } from 'svelte-scrolling';
     import Articlebox from "../components/Articlebox.svelte";
     let articleData = [
     {
@@ -16,7 +16,7 @@
     },
     {
         id:3,
-        topic: "This is Arjun Kapoor’s real-life dietand the foods he avoids",
+        topic: "This is Arjun Kapoor’s real-life diet, his cheat day meals...",
         subline: "The actor’s story will inspire you to develop a healthy relationship with food",
         redirect:  'https://www.gqindia.com/look-good/content/this-is-arjun-kapoors-real-life-diet-his-cheat-day-meals-and-foods-he-avoids'
     },
@@ -44,11 +44,7 @@
 
 <main>
     <section use:scrollRef={'article'} id="article-section" class="article-section site-container">
-        <h1 class="article-section-header">Recent Articles</h1>
-        <p class="article-section-para">
-          Lorem ipsum dolor sit amet, consectetur adipiscing
-          elit, sed do eiusmod tempor incididunt ut labore et dolore 
-        </p>
+        <h1 class="article-section-header">News and Stories</h1>
   
         <div class="article-grid">
           {#each articleData as arData (arData.id)}
@@ -61,24 +57,17 @@
 <style>
   .article-section-header {
     font-size: 28px;
-    margin-bottom: 0;
+    margin-bottom: 50px;
     color: var(--primary);
     font-weight: 600;
     text-align: center;
+
   }
 
-  .article-section-para {
-    display: none;
-    font-size: 14px;
-    margin-top: 5px;
-    width: 500px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-  }
 
   .article-grid {
-    margin-top: 70px;
+    width: 86vw;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     row-gap: 50px;
@@ -98,10 +87,6 @@
       margin: 0 auto;
     }
 
-    .article-section-para {
-      width: 80%;
-      margin-bottom: 4vh;
-    }
 
     .article-section-header {
       font-size: 25px;

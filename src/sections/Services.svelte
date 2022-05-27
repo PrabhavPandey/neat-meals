@@ -1,5 +1,5 @@
 <script>
-  import { scrollRef } from 'svelte-scrolling'
+  import { scrollRef } from 'svelte-scrolling';
   import ServicesBox from "../components/ServicesBox.svelte";
 
   let serviceData = [
@@ -46,6 +46,7 @@
 <style>
 .services-section {
     display: flex;
+    padding-left: 3vw;
     background-size:  1200px 900px;
     background-position: center;
     align-items: center;
@@ -54,7 +55,7 @@
   .text-container-header {
     color: var(--primary);
     font-weight: 600;
-    font-size: 18px;
+    font-size: 1.4em;
     margin-bottom: 7px;
   }
   .text-container-title {
@@ -65,7 +66,7 @@
     line-height: 132.5%;
   }
   section {
-    margin-top: 70px;
+    margin-top: 40px;
     height: 100vh;
   }
 

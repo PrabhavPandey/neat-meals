@@ -32,7 +32,7 @@
     display: grid;
     grid-template-columns: repeat(5,1fr);
     width: 90vw;
-    row-gap: 4vw;
+    row-gap: 2vw;
     column-gap: 2vw;
     margin: 0 auto;
   }
@@ -40,18 +40,20 @@
   img {
     height: 40vh;
     width: 16vw;
-    filter: brightness(40%);
+    filter: brightness(70%);
     transition: all 0.5s;
     border-radius: 10px;
   }
 
   img:hover {
     filter: brightness(100%);
-    box-shadow: 7px 10px #888888;
-    transform: scale(1.1);
+    box-shadow: 7px 7px #888888;
+    transform: scale(1.2);
   }
 
-  @media screen and (max-width: 400px) {
+
+
+  @media screen and (max-width: 800px) {
     .gallery-container {
     grid-template-columns: repeat(2,1fr);
     width: 90vw;

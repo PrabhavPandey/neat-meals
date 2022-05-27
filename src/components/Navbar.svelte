@@ -1,6 +1,5 @@
 <script>
 
-    import { scrollTo } from 'svelte-scrolling';
 
     let open;
     let isActive = false;
@@ -80,9 +79,14 @@
             </ul>
         </nav>
     </header>
+    <hr />
 </main>
 
 <style>
+
+  hr {
+    display: none;
+  }
 
     .faddedState {
       opacity: 0;
@@ -158,6 +162,10 @@
 }
 
 @media only screen and (max-width: 400px) {
+
+  hr {
+    display: block;
+  }
 
   .navigation-primary {
     display: flex;

@@ -36,6 +36,7 @@
   }
 
   .footer-container {
+    width: 84vw;
     display: flex;
     align-items: center;
     justify-content: space-between;

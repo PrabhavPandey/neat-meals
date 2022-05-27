@@ -1,5 +1,5 @@
 <script>
-    import {scrollRef} from "svelte-scrolling"
+    import { scrollRef } from "svelte-scrolling";
     import Button from "../components/Button.svelte";
     import Navbar from "../components/Navbar.svelte";
     export let imageLink;
@@ -49,12 +49,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
-    padding-bottom: 50px;
-  }
-
-  section {
-    height: 100vh;
+    gap: 40px;
+    padding-bottom: 10vh;
   }
 
   @media screen and (max-width: 400px) {
