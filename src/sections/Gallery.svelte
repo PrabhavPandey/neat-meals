@@ -1,20 +1,23 @@
 <script>
-    </script>
+  import { scrollRef } from 'svelte-scrolling';
+  import {imageStore} from "../stores/imageStore"
+  import { onDestroy } from 'svelte';
+  let imagedata = [];
+
+  const unsubscribe = imageStore.subscribe((storeData) => {
+    imagedata = storeData
+  })
+
+  onDestroy(unsubscribe());
+</script>
 
 <main>
-    <section id="gallery-section" class="gallery-section site-container">
+    <section use:scrollRef={'gallery'} id="gallery-section" class="gallery-section site-container">
         <h1>Gallery</h1>
             <div class="gallery-container">
-              <img src="./assets/InstaImg1.jpeg" alt="background" />
-              <img src="./assets/InstaImg2.jpeg" alt="background" />
-              <img src="./assets/InstaImg3.jpeg" alt="background" />
-              <img src="./assets/InstaImg4.jpeg" alt="background" />
-              <img src="./assets/InstaImg5.jpeg" alt="background" />
-              <img src="./assets/InstaImg6.jpeg" alt="background" />
-              <img src="./assets/InstaImg7.jpeg" alt="background" />
-              <img src="./assets/InstaImg8.jpeg" alt="background" />
-              <img src="./assets/InstaImg9.jpeg" alt="background" />
-              <img src="./assets/InstaImg10.jpeg" alt="background" />
+              {#each imagedata as imgData (imgData.id) }
+                <img src={imgData.src} alt={imgData.alt}/>
+              {/each}
             </div>
 
     </section>

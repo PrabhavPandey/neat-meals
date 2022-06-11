@@ -1,7 +1,5 @@
 <script>
-
-
-    let open;
+    import { scrollTo } from 'svelte-scrolling'
     let isActive = false;
     const setState = () => { isActive = !isActive }
     export let pageLocation;
@@ -63,7 +61,7 @@
                   <li><a class="nav-primary-item" href="#/about">About us</a></li>
               {/if}
                 <li><a use:scrollTo={'service'} class="nav-primary-item" href="#services-section">Services</a></li>
-                <li><a class="nav-primary-item" href="#gallery-section">Gallery</a></li>
+                <li><a use:scrollTo={'gallery'} class="nav-primary-item" href="#gallery-section">Gallery</a></li>
                 <li><a use:scrollTo={'article'} class="nav-primary-item" href="#article-section">Articles</a></li>
             </ul>
             <ul class={navBarStyleSoc}>
