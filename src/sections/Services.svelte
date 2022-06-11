@@ -48,6 +48,9 @@
     display: flex;
     padding-left: 3vw;
     background-size:  1200px 900px;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
     background-position: center;
     align-items: center;
   }
